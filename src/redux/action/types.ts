@@ -1,0 +1,1 @@
+export const MOVE_TEST_PAGE = "destroy/MOVE_TEST_PAGE";

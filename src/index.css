@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,111 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*:focus {
+  outline: none;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+article,
+aside,
+canvas,
+footer,
+header,
+output,
+section,
+summary,
+article,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0px;
+  display: block;
+
+}
+
+div,
+span,
+article,
+section,
+header,
+footer,
+aside,
+textarea,
+input,
+p,
+ul,
+li,
+label,
+a,
+form {
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 1.75rem;
 }
