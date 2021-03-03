@@ -16,7 +16,7 @@ function App() {
   const page = useSelector((state:any) => state.destroy.page);
   console.log(page);
   const testPageRender = () => {
-    if(page === testDataList.length) return <TestResult/>
+    if(page === testDataList.length + 1) return <TestResult/>
     
     const pageRender = page === 0 ? <DestroyMain /> : <TestView />;
 

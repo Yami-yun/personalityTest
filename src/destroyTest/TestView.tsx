@@ -1,13 +1,19 @@
 import { testDataList } from 'destroyTest/component/data';
-import { Whole } from 'destroyTest/component/layout';
+import { TestLayout } from 'destroyTest/component/layout';
+import TestProgress from 'destroyTest/component/TestProgress';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { MOVE_TEST_PAGE } from 'redux/action/types';
+import { MOVE_TEST_PAGE, RESULT_TXT_ADD } from 'redux/action/types';
 import styled from 'styled-components';
 
 import test from './img/skill2.png';
 
 
+const Whole = styled.section`
+    display: flex;
+    flex-direction: column;
+
+`;
 
 const TestImage = styled.img`
     width: 80px;
@@ -48,23 +54,27 @@ function TestView(){
 
     const dispatch = useDispatch();
     const len = testDataList.length;
-    const onNextHandler = () => {
-        if(page < len) dispatch({type:MOVE_TEST_PAGE});
+    const onNextHandler = (result:string) => {
+        if(page <= len){
+            dispatch({type:MOVE_TEST_PAGE});
+            dispatch({type:RESULT_TXT_ADD, payload:result});
+        }
     }
 
     return (
-    <>
-        <Whole>
-
+    <Whole>
+        <TestProgress page={page}/>
+        <TestLayout>
+            
             {/* <TestImage src={require(testDataList[page-1].imgSrc)}/> */}
             {/* <TestImage src={imgSrc}/> */}
             <TestImage src={testDataList[page-1].imgSrc}/>
             <TestQuestion>{testDataList[page-1].questionTxt} </TestQuestion>
             {testDataList[page-1].answerTxtList.map((value, index)=>
-                <SelectBtn onClick={onNextHandler} key={index}>{value.answerTxt}</SelectBtn>
+                <SelectBtn onClick={()=>onNextHandler(value.result)} key={index}>{value.answerTxt}</SelectBtn>
             )}
 
-        </Whole>
-    </>);
+        </TestLayout>
+    </Whole>);
 }
 export default TestView;

@@ -1,4 +1,4 @@
-import { Whole } from 'destroyTest/component/layout';
+import { TestLayout } from 'destroyTest/component/layout';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { MOVE_TEST_PAGE } from 'redux/action/types';
@@ -33,12 +33,12 @@ function DestroyMain(){
     }
     return (
     <>
-        <Whole>
-        <Title1>멸망한 세계에서</Title1>
-        <Title2>알아보는 성격 테스트</Title2>
+        <TestLayout>
+            <Title1>멸망한 세계에서</Title1>
+            <Title2>알아보는 성격 테스트</Title2>
 
-        <StartBtn onClick={onStartHandler}> S T A R T </StartBtn>
-        </Whole>
+            <StartBtn onClick={onStartHandler}> S T A R T </StartBtn>
+        </TestLayout>
     </>);
 }
 export default DestroyMain;
