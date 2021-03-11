@@ -28,7 +28,7 @@ function TestProgress({page}:{page:number}){
     return (
     <ProgressBarList>
     {testDataList.map((value:any, index:number)=>
-        <ProgressBar isCheck={page > index} key={index}>{page - 1 === index && <ProgressImg src={'img/ProgressImg.png'}/>}</ProgressBar>
+        <ProgressBar isCheck={page > index} key={index}>{page - 1 === index && <ProgressImg src={'img/progressImg.png'}/>}</ProgressBar>
     )}
     </ProgressBarList>);
 }
