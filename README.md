@@ -17,3 +17,5 @@
 
 +++ 스토리, 서버 개발 기획 구상중
 
+현재 배포 경로 >  https://main.de6h2d5qasboa.amplifyapp.com/
+

@@ -12,11 +12,7 @@ const ProgressBar = styled.div<{isCheck:boolean}>`
     width: 30px;
     height: 36px;
     margin: 0 6.5px;
-
-
     border-bottom: 7px solid ${(props)=> props.isCheck ? "#DB4B4B" : "white"};
-    
-
 `;
 
 const ProgressImg = styled.img`
