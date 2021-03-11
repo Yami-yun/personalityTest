@@ -1,10 +1,15 @@
 import { TestLayout } from 'destroyTest/component/layout';
+import TestProgress from 'destroyTest/component/TestProgress';
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { MOVE_TEST_PAGE } from 'redux/action/types';
 import styled from 'styled-components';
 
-
+const Whole = styled.section`
+    margin-top: 50px;
+    /* border: 1px solid; */
+`;
 
 const Title1 = styled.h1`
     margin-bottom: 15px;
@@ -22,23 +27,25 @@ const StartBtn = styled.button`
 
     font-size: 1.6rem;
     font-weight: 700;
+
+    &:hover{
+        background: white;
+    }
 `;
 
 function DestroyMain(){
 
     const dispatch = useDispatch();
 
-    const onStartHandler = () => {
-        dispatch({type:MOVE_TEST_PAGE});
-    }
     return (
-    <>
+    <Whole>
         <TestLayout>
+            
             <Title1>멸망한 세계에서</Title1>
             <Title2>알아보는 성격 테스트</Title2>
 
-            <StartBtn onClick={onStartHandler}> S T A R T </StartBtn>
+            <StartBtn><Link to="/test"> S T A R T </Link></StartBtn>
         </TestLayout>
-    </>);
+    </Whole>);
 }
 export default DestroyMain;

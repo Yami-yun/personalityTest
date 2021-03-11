@@ -1,6 +1,6 @@
 export const resultData = [
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/11.png",
         type: "외향형",
         data: `- 외부 활동에 적극적이다.<br/>
         - 다른 사람들과 잘 어울림<br/>
@@ -8,7 +8,7 @@ export const resultData = [
         - 열정적임<br/>`,
     },
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/12.png",
         type: "내향형",
         data: `- 혼자서 하는 활동을 집중적으로 한다.<br/>
         - 나는 내생각을 말로 전달하는 것보다 글로 적을 때 잘 표현한다.
@@ -18,7 +18,7 @@ export const resultData = [
         - 조용하고 신중하다.<br/>`,
     },
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/13.png",
         type: "감정형",
         data: `- 나는 내 느낌이나 감정 감정에 대한 이야기를 많이 해요.<br/>
         - 나는 가슴으로 느껴지는 것이 중요해요.
@@ -28,7 +28,7 @@ export const resultData = [
         - 사고형의 친구를 보면 냉정한 것 같다고 생각한다.<br/>`,
     },
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/14.png",
         type: "사고형",
         data: `- 객관적인 판단이나 생각에 대한 이야기를 많이 한다.<br/>
         - 머리로 이해되는 것이 중요하다.<br/>
@@ -41,7 +41,7 @@ export const resultData = [
 export const testDataList = [
     // #1
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/01.png",
         questionTxt:"멸망한 세계 속에서 기억과 정신을 잃은 나... 눈을 뜨고 내뱉은 말(...)",
         answerTxtList:[
             {
@@ -64,7 +64,7 @@ export const testDataList = [
 
     // #2
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/02.png",
         questionTxt:'대부분 건물 들은 부서져 있었고 시체들만 있는 거리를 걷고 있는 중, 어디로 향할지 정하는데(...)',
         answerTxtList:[
             {
@@ -87,7 +87,7 @@ export const testDataList = [
 
     // #3
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/03.png",
         questionTxt:"도시 안에 대부분 먹을 것이 없다. 그러던 중, 쥐 한마리를 잡게 되는데٩(๑`^´๑)۶",
         answerTxtList:[
             {
@@ -110,7 +110,7 @@ export const testDataList = [
 
     // #4
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/04.png",
         questionTxt:"밤이 되었다. 잠을 잘 곳을 선택하는 당신(-..-)",
         answerTxtList:[
             {
@@ -133,7 +133,7 @@ export const testDataList = [
 
     // #5
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/05.png",
         questionTxt:"꿈 속에서 누군가를 만났다. 누구지...?",
         // 꿈 속에서 미래의 한 장면을 보았다. ?
         answerTxtList:[
@@ -157,7 +157,7 @@ export const testDataList = [
 
     // #6
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/06.png",
         questionTxt:"다음 날, 길을 걷다가 생존자를 보았다.꒰⸝⸝•｡•⸝⸝꒱",
         answerTxtList:[
             {
@@ -180,7 +180,7 @@ export const testDataList = [
 
     // #7
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/07.png",
         questionTxt:"생존자 캠프에 합류했다. 리더로 보이는 사람이 물었다. '당신은 멸망하기 전에 직업이 무엇이었나요?' (기억 상실이였던 나는 거짓으로 대답을 하였다.)",
         answerTxtList:[
             {
@@ -203,7 +203,7 @@ export const testDataList = [
 
     // #8
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/08.png",
         questionTxt:"캠프에 합류한 당신, 무엇부터 할 것인가?",
         answerTxtList:[
             {
@@ -223,7 +223,7 @@ export const testDataList = [
 
     // #9
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/09.png",
         questionTxt:"동료와 함께 폐허가 된 건물에서 쓸모있는 물건을 찾는 중, 방사능 괴물을 만났다. ",
         answerTxtList:[
             {
@@ -246,7 +246,7 @@ export const testDataList = [
 
     // #10
     {
-        imgSrc:"img/skill2.png",
+        imgSrc:"img/destory/10.png",
         questionTxt:"생존자 캠프 내에 음식이 사라졌다. 알리바이가 없는 당신을 의심하는 사람들...",
         answerTxtList:[
             {
